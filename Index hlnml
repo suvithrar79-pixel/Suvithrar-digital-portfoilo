@@ -1,0 +1,28 @@
+def display_timetable(schedule):
+    """Displays the daily timetable."""
+    print("--- Daily Timetable ---")
+    for time, activity in schedule.items():
+        print(f"{time}: {activity}")
+    print("-----------------------")
+
+# Define your daily schedule
+daily_schedule = {
+    "08:00 AM": "Wake up, Breakfast",
+    "09:00 AM": "Work/Study Session 1",
+    "12:00 PM": "Lunch Break",
+    "01:00 PM": "Work/Study Session 2",
+    "04:00 PM": "Break/Errands",
+    "05:00 PM": "Exercise",
+    "06:00 PM": "Dinner",
+    "07:00 PM": "Leisure/Hobbies",
+    "09:00 PM": "Prepare for Bed",
+    "10:00 PM": "Sleep"
+}
+
+# Display the timetable
+display_timetable(daily_schedule)
+
+# You can also add or modify entries
+daily_schedule["04:00 PM"] = "Grocery Shopping"
+print("\n--- Updated Timetable ---")
+display_timetable(daily_schedule)
